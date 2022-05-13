@@ -30,7 +30,7 @@ public class pessoa {
 }
 
 class jsl extends pessoa{
-    private int pulacorda = 0;
+    private int pulacorda = 2;
     jsl()
     {
         this.setEmail("jdsl@icomp.ufam.edu.br");
