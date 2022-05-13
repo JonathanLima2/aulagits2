@@ -41,13 +41,9 @@ class jsl extends pessoa{
     public int getP(){return this.pulacorda;}
 
     public int pular(int i)
-    { 
-        int k=0;     
-        while(k<=i)
-        { 
-            this.setP(k);
-            k++;
-        }
+    {
+        for (int n=0; n<=i; n++)
+            this.setP(n);
         return this.getP();
     }
 }
