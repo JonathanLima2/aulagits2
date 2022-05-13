@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class pessoa {
     private String nome;
     private int idade;
@@ -28,11 +30,19 @@ public class pessoa {
 }
 
 class jsl extends pessoa{
-    
+    private int pulacorda = 0;
     jsl()
     {
         this.setEmail("jdsl@icomp.ufam.edu.br");
         this.setIdade(22);
         this.setNome("jonathan Lima");
-    }   
+    }
+    public void setP(int p){this.pulacorda = p;}
+    public int getP(){return this.pulacorda;}
+    public int pular(int i)
+    {
+        for (int n=0; n<i; n++)
+            this.setP(n);
+        return this.getP();
+    }
 }
